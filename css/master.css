@@ -1,0 +1,111 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, tahoma, sans-serif;
+}
+body {
+  background-image: url("../imges/photo.jpg");
+  background-size: cover;
+  direction: rtl;
+  width: 100%;
+}
+.prayer {
+  position: relative;
+  width: 700px;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+.prayer .container {
+  position: absolute;
+}
+.prayer .container .input {
+  display: flex;
+}
+.prayer .container .input input {
+  width: 100%;
+  padding: 15px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border: none;
+  background-color: rgba(255,255,255,0.45);
+  color: white;
+  font-weight: bold;
+}
+.prayer .container .input input:focus {
+  outline: none;
+}
+.prayer .container .input .search {
+  padding: 15px;
+  margin-right: 10px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border: none;
+  background-color: rgba(255,255,255,0.45);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+.prayer .container h2,
+.prayer .container .year {
+  margin-top: 25px;
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+}
+h3 {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+.boxs {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 700px;
+  font-size: 22px;
+  color: white;
+}
+
+.boxs .box {
+  background-color: rgba(255,255,255,0.34);
+  padding: 20px;
+  margin-left: 5px;
+  width: 100px;
+  height: 100px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  text-align: center;
+}
+.boxs .box .box-one {
+  margin-top: 5px;
+  font-weight: bold;
+}
+@media(max-width: 700px) {
+  .boxs {
+    width: 300px;
+  }
+  .boxs .box {
+    margin-bottom: 5px;
+  }
+  .prayer .container {
+    margin-right: 20px;
+  }
+}
+.notfound {
+  margin-top: 20px;
+  font-size: 40px;
+}
